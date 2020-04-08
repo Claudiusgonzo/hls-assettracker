@@ -1,25 +1,3 @@
----
-page_type: sample
-languages:
-- csharp
-products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
----
-
-# Official Microsoft Sample
-
-<!-- 
-Guidelines on README format: https://review.docs.microsoft.com/help/onboard/admin/samples/concepts/readme-template?branch=master
-
-Guidance on onboarding samples to docs.microsoft.com/samples: https://review.docs.microsoft.com/help/onboard/admin/samples/process/onboarding?branch=master
-
-Taxonomies for products and languages: https://review.docs.microsoft.com/new-hope/information-architecture/metadata/taxonomies?branch=master
--->
-
-Give a short description for your sample here. What does it do and why is it important?
-
 ## Contents
 
 Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
@@ -33,21 +11,22 @@ Outline the file contents of the repository. It helps users navigate the codebas
 | `README.md`       | This README file.                          |
 | `LICENSE`         | The license for the sample.                |
 
-## Prerequisites
+## Starter Kit Challenge
 
-Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
+This Starter Kit is intended to help healthcare organizations manage physical assets like beds and equipment criticial to the COVID effort. 
+1. Healthcare organization wants a means of quickly capturing state (availabile, used for COVID patient, used for non-COVID patient, under maintenance) and location of assets.
+  1. start with beds and ventilators, but could include other assets
+2. Healthcare organization wants a means of querying for location of assets that meet specified criteria.
+3. Healthcare organizaton wants a means of reporting on asset availability.
+4. Healthcare organization wants to be able to share (export) data with other providers.
+5. Healthcare organization wants to be able to import data from other providers.
 
-## Setup
+## Desired Skills & Technologies
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
-
-## Running the sample
-
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
-
-## Key concepts
-
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+- UI development - was thinking about a Power App that could be used cross-platform, but open to other thoughts. (Another thought was a bot!)
+- Web API - was thinking about a collection of Azure Functions that represent reading/writing to the data store.
+- data store - was thinking "no-SQL" store, but Azure SQL Database is nice small, cheap option as well.
+- Power BI - starter reports that allow them to quickly visualize asset availability, location, etc.
 
 ## Contributing
 
