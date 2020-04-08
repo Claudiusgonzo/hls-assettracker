@@ -1,3 +1,5 @@
+Navigate to [Microsoft HLS Home repo](https://github.com/microsoft/hls-home)
+
 ## Contents
 
 Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
